@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(cookieParser())
 
-mongo_uri='mongodb+srv://root:1234@cluster0.1jwwq.mongodb.net/teamate?retryWrites=true&w=majority'
+mongo_uri='mongodb+srv://root:1234@cluster0.1jwwq.mongodb.net/teamate_1?retryWrites=true&w=majority'
 mongoose.connect(mongo_uri, {useNewUrlParser:true, useUnifiedTopology:true}, function(err){
     if(err){
         console.log(err)
